@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>LD50 Récords</title>
+    </head>
+
+    <body>
+        <!-- Esto es el navbar -->
+        <header>
+            <!-- La clase navbar-inverse hace que se inviertan los colores, y la clase navbar-static-top permite que se quede fija en la parte de arriba -->
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-cit">
+                            <span class="sr-only">Desplegar / Ocultar</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Citrol Blog</a>
+                    </div>
+                    <!-- Acá inicia el menú -->
+                    <div class="callapse navbar-collapse" id="navegacion-cit">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/inicio">Inicio</a></li>
+                            <!-- Acá se hace la parte del menú desplegable -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                    De Nosotros <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="/nosotros">Nosotros</a></li>
+                                    <!-- <li class="divider"></li> -->
+                                    <li><a href="/nuestro-trabajo">Nuestro Trabajo</a></li>
+                                    <li><a href="/nuestro-equipo">Nuestro Equipo</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="venta-beats">Venta de Beats</a></li>
+                            <li><a href="/contacto">Contacto</a></li>
+                        </ul>
+                        <!-- Acá se hace la parte del buscador general -->
+                        <form action="" class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Buscar">
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Scripts de bootstrap y demás -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
