@@ -1,0 +1,39 @@
+/* -- PARA EL HEADER --*/
+.navbar {
+	margin-bottom: 0;
+}
+
+/* -- PARA EL JUMBOTRON --*/
+.jumbotron {
+	background: #D3D3D3;
+	padding: 10px 0;
+}
+
+.jumbotron .titulo-blog{
+	font-size: 80px;
+}
+
+/*-- PARA LOS BLOGS --*/
+.main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.blog {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+
+.blog .blog-title a {
+	color: #333;
+}
+
+.blog .thumb {
+	margin-rigth:10px;
+	width: 30%;
+}
+
+.blog .thumb img {
+	width: 95%;
+}
