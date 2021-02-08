@@ -10,51 +10,67 @@
     <body>
         <!-- Esto es el navbar -->
         <header>
-            <!-- La clase navbar-inverse hace que se inviertan los colores, y la clase navbar-static-top permite que se quede fija en la parte de arriba -->
-            <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-cit">
-                            <span class="sr-only">Desplegar / Ocultar</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="#" class="navbar-brand">Citrol Blog</a>
-                    </div>
-                    <!-- Acá inicia el menú -->
-                    <div class="callapse navbar-collapse" id="navegacion-cit">
-                        <ul class="nav navbar-nav">
-                            <li><a href="/inicio">Inicio</a></li>
-                            <!-- Acá se hace la parte del menú desplegable -->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                                    De Nosotros <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/nosotros">Nosotros</a></li>
-                                    <!-- <li class="divider"></li> -->
-                                    <li><a href="/nuestro-trabajo">Nuestro Trabajo</a></li>
-                                    <li><a href="/nuestro-equipo">Nuestro Equipo</a></li>
-                                    <li><a href="/blog">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="venta-beats">Venta de Beats</a></li>
-                            <li><a href="/contacto">Contacto</a></li>
-                        </ul>
-                        <!-- Acá se hace la parte del buscador general -->
-                        <form action="" class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Buscar">
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </form>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Letal Dosis 50</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Quiénes Somos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/nosotros">Nosotros</a>
+                        <a class="dropdown-item" href="/nuestro-equipo">Nuestro Equipo</a>
+                        <a class="dropdown-item" href="/nuestro-trabajo">Nuestro Trabajo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/letal-shit">Letal Shit <!--<span class="sr-only">(current)--> </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/beats">Beats <!--<span class="sr-only">(current)--> </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto">Contacto</a>
+                    </li>
+                    </ul>
                 </div>
             </nav>
         </header>
+
+        <!-- Donde aparecen los mensajes con Flash -->
+        {% with messages = get_flashed_messages(with_categories = true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category == 'error' %}
+                        <div class="alert alert-danger alert-dismissable fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-success alert-dismissable fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- El contenido individual de cada página -->
+        <div class="container">
+            {% block content %} {% endblock %}
+        </div>
 
         <!-- Scripts de bootstrap y demás -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
