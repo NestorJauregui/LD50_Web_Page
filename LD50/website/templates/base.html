@@ -71,8 +71,8 @@
         <!-- Esto es el jumbotron -->
         <section class="jumbotron">
             <div class="container">
-                <h1 class="titulo-blog">La Seccion</h1>
-                <p>Un subtítulo que hable del contenido de la sección.</p>
+                <h1 class="titulo-blog">{% block jumbotron %}La Seccion{% endblock %}</h1>
+                <p>{% block subjumbotron %}Un subtítulo que hable del contenido de la sección.{% endblock %}</p>
             </div>
         </section>
 
