@@ -25,12 +25,14 @@
 	border-bottom: 1px solid #999;
 }
 
-.blog .blog-title a {
+.blog-title {
+	float: right;
 	color: #333;
 }
 
-.blog .thumb {
-	margin-rigth:10px;
+.thumb {
+	float: left;
+	margin-right:10px;
 	width: 30%;
 }
 
