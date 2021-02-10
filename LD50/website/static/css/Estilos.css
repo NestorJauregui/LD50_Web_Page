@@ -9,33 +9,9 @@
 	padding: 10px 0;
 }
 
-.jumbotron .titulo-blog{
-	font-size: 80px;
+.jumbotron h1 {
+	font-size: 50px;
+	font-weight: 200;
 }
 
 /*-- PARA LOS BLOGS --*/
-.main {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.blog {
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #999;
-}
-
-.blog-title {
-	float: right;
-	color: #333;
-}
-
-.thumb {
-	float: left;
-	margin-right:10px;
-	width: 30%;
-}
-
-.blog .thumb img {
-	width: 95%;
-}

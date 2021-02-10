@@ -11,7 +11,7 @@
     <body>
         <!-- Esto es el navbar -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
                 <a class="navbar-brand" href="#">Letal Dosis 50</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
         <!-- Esto es el jumbotron -->
         <section class="jumbotron">
             <div class="container">
-                <h1 class="titulo-blog">{% block jumbotron %}La Seccion{% endblock %}</h1>
+                <h1 class="display-3 font-weight-normal">{% block jumbotron %}La Seccion{% endblock %}</h1>
                 <p>{% block subjumbotron %}Un subtítulo que hable del contenido de la sección.{% endblock %}</p>
             </div>
         </section>
