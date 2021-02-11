@@ -3,32 +3,38 @@
 {% block subjumbotron %}El subtítulo de la sección del blog.{% endblock %}
 
 {% block content %}
-    <article style="border-bottom: 1px solid #999; padding-bottom: 20px; margin-bottom: 20px;">
-        <a href="{{ url_for('static', filename='/images/Imagen_muestra.png') }}">
-            <img src="{{ url_for('static', filename='/images/Imagen_muestra.png') }}" alt="Imagen de prueba para la página" class="float-left" style="padding-right: 20px" width="300">
-        </a>
-        <h2>El Título Del Primer Blog</h2>
-        <p>10 de Febrero de 2021  por  <span><a href="https://www.facebook.com/nestor.jauregui.s/">El Néstor</a></span></p>
-        <div>
-            <p>Hace 5 años agentes de la Policía Nacional se inventaron un atraco a un bus, plantaron un arma de fuego como evidencia falsa, consiguieron testigos y hasta un conductor de transporte público que justificara la muerte de un niño con una lata de aerosol. El patrullero Wilmer Alarcón disparó a Andrés Felipe Becerra, que andaba “rayando” por ahí, y lo que siguió constituye uno de los actos más vergonzosos llevados a cabo por la Policía Nacional de Colombia.</p>
-            <p>Para fortuna de los padres de Andrés, ni el patrullero, ni sus compañeros y mucho menos sus superiores gozan de competencias suficientes para encubrir un crimen —ni qué decir sobre investigarlos—, y se supo que desde el coronel Nelson de Jesús Arévalo, el coronel Javier Vivas, el general Francisco Patiño y los demás cabezahuecas que querían esconder la falta del patrullero Alarcón se pensaron un plan para encubrir el asesinato.</p>
-        </div>
-        <div>
-            <button type="button" class="btn btn-link" style="padding-left: 0px; padding-bottom: 10px;">Leer más...</button>
-        </div>
-    </article>
-    <article style="border-bottom: 1px solid #999; padding-bottom: 20px; margin-bottom: 20px;">
-        <a href="{{ url_for('static', filename='/images/Imagen_muestra.png') }}">
-            <img src="{{ url_for('static', filename='/images/Imagen_muestra_2.jpg') }}" alt="Imagen de prueba para la página" class="float-left" style="padding-right: 20px" width="300">
-        </a>
-        <h2>Este Sería El Segundo Blog</h2>
-        <p>10 de Febrero de 2021  por  <span><a href="https://www.facebook.com/david.jaureguisarmiento">Chili P</a></span></p>
-        <div>
-            <p>Hace 5 años agentes de la Policía Nacional se inventaron un atraco a un bus, plantaron un arma de fuego como evidencia falsa, consiguieron testigos y hasta un conductor de transporte público que justificara la muerte de un niño con una lata de aerosol. El patrullero Wilmer Alarcón disparó a Andrés Felipe Becerra, que andaba “rayando” por ahí, y lo que siguió constituye uno de los actos más vergonzosos llevados a cabo por la Policía Nacional de Colombia.</p>
-            <p>Para fortuna de los padres de Andrés, ni el patrullero, ni sus compañeros y mucho menos sus superiores gozan de competencias suficientes para encubrir un crimen —ni qué decir sobre investigarlos—, y se supo que desde el coronel Nelson de Jesús Arévalo, el coronel Javier Vivas, el general Francisco Patiño y los demás cabezahuecas que querían esconder la falta del patrullero Alarcón se pensaron un plan para encubrir el asesinato.</p>
-        </div>
-        <div>
-            <button type="button" class="btn btn-link" style="padding-left: 0px; padding-bottom: 10px;">Leer más...</button>
-        </div>
-    </article>
+    <div id="blog-contenidos">
+        <article style="border-bottom: 1px solid #999; padding-bottom: 20px; margin-bottom: 20px;">
+            <a href="{{ url_for('static', filename='/images/Imagen_muestra.png') }}">
+                <img src="{{ url_for('static', filename='/images/Imagen_muestra.png') }}" alt="Imagen de prueba para la página" class="float-left" style="padding-right: 20px" width="300">
+            </a>
+            <h2>El Título Del Primer Blog</h2>
+            <p>10 de Febrero de 2021  por  <span><a href="https://www.facebook.com/nestor.jauregui.s/">El Néstor</a></span></p>
+            <div>
+                <p>Hace 5 años agentes de la Policía Nacional se inventaron un atraco a un bus, plantaron un arma de fuego como evidencia falsa, consiguieron testigos y hasta un conductor de transporte público que justificara la muerte de un niño con una lata de aerosol. El patrullero Wilmer Alarcón disparó a Andrés Felipe Becerra, que andaba “rayando” por ahí, y lo que siguió constituye uno de los actos más vergonzosos llevados a cabo por la Policía Nacional de Colombia.</p>
+                <p>Para fortuna de los padres de Andrés, ni el patrullero, ni sus compañeros y mucho menos sus superiores gozan de competencias suficientes para encubrir un crimen —ni qué decir sobre investigarlos—, y se supo que desde el coronel Nelson de Jesús Arévalo, el coronel Javier Vivas, el general Francisco Patiño y los demás cabezahuecas que querían esconder la falta del patrullero Alarcón se pensaron un plan para encubrir el asesinato.</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn-link" style="padding-left: 0px; padding-bottom: 10px;">Leer más...</button>
+            </div>
+        </article>
+        <article style="border-bottom: 1px solid #999; padding-bottom: 20px; margin-bottom: 20px;">
+            <a href="{{ url_for('static', filename='/images/Imagen_muestra.png') }}">
+                <img src="{{ url_for('static', filename='/images/Imagen_muestra_2.jpg') }}" alt="Imagen de prueba para la página" class="float-left" style="padding-right: 20px" width="300">
+            </a>
+            <h2>Este Sería El Segundo Blog</h2>
+            <p>10 de Febrero de 2021  por  <span><a href="https://www.facebook.com/david.jaureguisarmiento">Chili P</a></span></p>
+            <div>
+                <p>Hace 5 años agentes de la Policía Nacional se inventaron un atraco a un bus, plantaron un arma de fuego como evidencia falsa, consiguieron testigos y hasta un conductor de transporte público que justificara la muerte de un niño con una lata de aerosol. El patrullero Wilmer Alarcón disparó a Andrés Felipe Becerra, que andaba “rayando” por ahí, y lo que siguió constituye uno de los actos más vergonzosos llevados a cabo por la Policía Nacional de Colombia.</p>
+                <p>Para fortuna de los padres de Andrés, ni el patrullero, ni sus compañeros y mucho menos sus superiores gozan de competencias suficientes para encubrir un crimen —ni qué decir sobre investigarlos—, y se supo que desde el coronel Nelson de Jesús Arévalo, el coronel Javier Vivas, el general Francisco Patiño y los demás cabezahuecas que querían esconder la falta del patrullero Alarcón se pensaron un plan para encubrir el asesinato.</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn-link" style="padding-left: 0px; padding-bottom: 10px;">Leer más...</button>
+            </div>
+        </article>
+    </div>
+    <div id="blog-conexiones">
+        <p class="h5">Visita el <span><a href="/">Inicio</a></span> para saber más de nosotros.</p>
+    </div>
+    <br/>
 {% endblock %}
